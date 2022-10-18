@@ -1,0 +1,19 @@
+{
+  "name": "saucedemo",
+  "version": "1.0.0",
+  "description": "Testes de software utilizando framework cypress + cucumber + BDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "test:chrome": "cypress run --browser chrome --no-exit"
+  },
+  "author": "Alex Nascimento",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^9.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
+  }
+}
